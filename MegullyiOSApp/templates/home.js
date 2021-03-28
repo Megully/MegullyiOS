@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Header from './organisms/header.js';
 import Body from './organisms/body.js';
 import NavBar from './organisms/navBar.js';
+import PlaceInfo from './organisms/placeInfo.js';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Body />
       <NavBar />
+      <PlaceInfo  />
       <StatusBar style="auto" />
     </View>
   );

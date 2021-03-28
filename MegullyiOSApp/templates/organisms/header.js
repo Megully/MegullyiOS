@@ -16,9 +16,21 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     flex: 3,
-    backgroundColor: '#ff0',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     width:wid,
+    zIndex:2,
+    marginBottom: -20,
+    shadowColor: "#000",
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 1,
   },
 });

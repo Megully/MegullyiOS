@@ -1,24 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View ,Image} from 'react-native';
 import {Dimensions} from 'react-native';
 const wid = Dimensions.get('screen').width;
+const hei = Dimensions.get('screen').height;
 
 export default function Body() {
   return (
     <View style={styles.container}>
-      <Text>body</Text>
-      <StatusBar style="auto" />
+      <Image
+          style={{
+            width: wid,
+            height: hei
+          }}
+          source={require('../../assets/map.png')}
+        />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 16,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 20,
+    zIndex:1,
     width:wid,
   },
 });
