@@ -22,6 +22,7 @@ export default function PlaceInfo() {
         <Button
           title="placeinfo"
           onPress={handleClick}
+          style={styles.button}
         />
       <StatusBar style="auto" />
     </View>
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     position:'absolute',
     bottom:0,
-    backgroundColor: '#fff',
+    backgroundColor: '#0B3954',
     alignItems: 'center',
     width:wid,
     zIndex:1,
@@ -46,5 +47,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 1,
+  },
+  button:{
+    color: "#fff",
   },
 });

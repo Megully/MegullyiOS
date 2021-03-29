@@ -2,13 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
+import HeaderItems from './molecules/headerItems.js';
 const wid = Dimensions.get('screen').width;
 
 export default function Header() {
   return (
     <View style={styles.container}>
-      <Text>header</Text>
-      <StatusBar style="auto" />
+      <HeaderItems />
     </View>
   );
 }
@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     flex: 3,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
     width:wid,
     zIndex:2,
     marginBottom: -20,
