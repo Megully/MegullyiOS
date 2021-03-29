@@ -11,7 +11,7 @@ const wid = Dimensions.get('screen').width;
 export default function HeaderItems() {
   return (
     <View style={styles.container}>
-      <HeaderButton icon='navicon' />
+      <HeaderButton icon='bars' />
       <View style={styles.center}>
         <RallyTitle />
         <ProgressText />

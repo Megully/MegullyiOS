@@ -24,7 +24,6 @@ export default function PlaceInfo() {
           onPress={handleClick}
           style={styles.button}
         />
-      <StatusBar style="auto" />
     </View>
   );
 }

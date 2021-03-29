@@ -3,11 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
 const wid = Dimensions.get('screen').width;
+import NavItems from "./molecules/navItems.js";
 export default function NavBar() {
   return (
     <View style={styles.container}>
-      <Text>navmenu</Text>
-      <StatusBar style="auto" />
+      <NavItems />
     </View>
   );
 }

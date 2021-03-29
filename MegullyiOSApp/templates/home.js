@@ -13,7 +13,6 @@ export default function Home() {
       <Body />
       <NavBar />
       <PlaceInfo  />
-      <StatusBar style="auto" />
     </View>
   );
 }
