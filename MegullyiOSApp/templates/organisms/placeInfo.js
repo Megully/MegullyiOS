@@ -1,29 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {Component} from 'react';
 import { StyleSheet, Text, View ,Button,Alert,LayoutAnimation,Dimensions} from 'react-native';
+import PlaceInfoTop from "./molecules/placeInfoTop.js";
+import PlaceInfoBody from "./molecules/placeInfoBody.js";
 const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height * (0.5);
 export default function PlaceInfo() {
   const [showInfo, setShowInfo] = React.useState(0);
   const [infoHeight, setInfoHeight] = React.useState(100);
+  const [iconDir, setIconDir] = React.useState("angle-up");
   const handleClick = () => {
     if(showInfo == 0){
       setShowInfo(() => 1);
-      LayoutAnimation.easeInEaseOut()
+      LayoutAnimation.easeInEaseOut();
       setInfoHeight(() => 400);
+      setIconDir(() => "angle-down");
     }else{
       setShowInfo(() => 0);
-      LayoutAnimation.easeInEaseOut()
+      LayoutAnimation.easeInEaseOut();
       setInfoHeight(() => 100);
+      setIconDir(() => "angle-up");
     }
   };
   return (
     <View style={[styles.container, {height: infoHeight}]}>
-        <Button
-          title="placeinfo"
-          onPress={handleClick}
-          style={styles.button}
-        />
+      <PlaceInfoTop toggle={iconDir} press={handleClick}/>
+      <PlaceInfoBody />
     </View>
   );
 }
@@ -32,7 +34,6 @@ const styles = StyleSheet.create({
   container: {
     position:'absolute',
     bottom:0,
-    backgroundColor: '#0B3954',
     alignItems: 'center',
     width:wid,
     zIndex:1,
