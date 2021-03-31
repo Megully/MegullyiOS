@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import {Dimensions} from 'react-native';
 import PlaceName from "./atoms/placeName.js";
 import InfoArrowButton from "./atoms/infoArrowButton.js";
@@ -8,10 +8,10 @@ const wid = Dimensions.get('screen').width;
 export default function PlaceInfoTop(props) {
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={props.press} activeOpacity='1' >
       <PlaceName />
-      <InfoArrowButton icon={props.toggle} press={props.press}/>
-    </View>
+      <InfoArrowButton icon={props.toggle} />
+    </TouchableOpacity>
   );
 }
 

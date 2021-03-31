@@ -8,7 +8,7 @@ const wid = Dimensions.get('screen').width;
 export default function InfoArrowButton(props) {
   return (
     <View style={styles.container}>
-      <Icon.Button name={props.icon} size={20} color='#fff' backgroundColor='#0B3954' onPress={props.press}></Icon.Button>
+      <Icon.Button name={props.icon} size={20} color='#fff' backgroundColor='#0B3954'></Icon.Button>
     </View>
   );
 }
