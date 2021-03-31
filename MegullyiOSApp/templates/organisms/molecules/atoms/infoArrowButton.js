@@ -8,15 +8,15 @@ const wid = Dimensions.get('screen').width;
 export default function InfoArrowButton(props) {
   return (
     <View style={styles.container}>
-      <Icon.Button name={props.icon} size={20} color='#fff' backgroundColor='#0B3954'></Icon.Button>
+      <Icon name={props.icon} size={20} color='#fff' backgroundColor='#0B3954' />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:5,
-    marginRight:18,
+    marginTop:11,
+    marginRight:28,
     alignItems: 'center',
   },
 });
