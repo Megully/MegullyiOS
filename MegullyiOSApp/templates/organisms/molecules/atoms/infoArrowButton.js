@@ -15,7 +15,7 @@ export default function InfoArrowButton(props) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:11,
+    marginTop:12,
     marginRight:28,
     alignItems: 'center',
   },

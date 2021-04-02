@@ -19,10 +19,10 @@ const styles = StyleSheet.create({
     marginLeft:10,
   },
   text: {
-    fontSize:15,
-    fontWeight:"600",
+    fontSize:14,
+    fontWeight:"700",
     color:'#707070',
     marginLeft:4,
-    marginTop:-1,
+    marginTop:0.5,
   },
 });

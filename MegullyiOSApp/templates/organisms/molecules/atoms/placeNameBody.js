@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
     flexDirection:'row',
   },
   text: {
-    fontSize:25,
-    fontWeight:"700",
+    fontSize:20,
+    fontWeight:"800",
     color:'#707070',
   },
 });

@@ -40,8 +40,10 @@ const styles = StyleSheet.create({
   aboutPlace:{
     width:240,
     flexDirection:'column',
-    height:100,
+    height:95,
     justifyContent:'center',
+    borderBottomColor:'#c9c9c9',
+    borderBottomWidth:2,
   },
   dirs:{
     flex:1,
