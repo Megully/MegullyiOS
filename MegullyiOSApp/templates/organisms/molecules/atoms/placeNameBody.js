@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Image} from 'react-native';
 import {Dimensions} from 'react-native';
+import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 export default function PlaceNameBody(props) {
   return (
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize:20,
     fontWeight:"800",
-    color:'#707070',
+    color:Colors.colors.text,
   },
 });

@@ -1,14 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Image} from 'react-native';
 import {Dimensions} from 'react-native';
+import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 export default function PlaceImg(props) {
   return (
     <View style={styles.container}>
         <Image
           style={styles.img}
-          source={require('../../../../assets/skyTree.jpg')}
+          source={require('../../../../assets/img/skyTree.jpg')}
         />
     </View>
   );
@@ -16,7 +16,7 @@ export default function PlaceImg(props) {
 
 const styles = StyleSheet.create({
   container: {
-    
+
   },
   img:{
     width: 80,

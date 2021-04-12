@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
@@ -6,6 +5,7 @@ import PlaceImg from './atoms/placeImg.js';
 import PlaceNameBody from './atoms/placeNameBody.js';
 import PlaceAddress from './atoms/placeAddress.js';
 import Dir from './atoms/dir.js';
+import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 export default function PlaceInfoTop(props) {
   return (
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     width:wid,
     flex:1,
     flexDirection:'column',
-    backgroundColor:'#fff',
+    backgroundColor:Colors.colors.background,
   },
   titles:{
     flexWrap:'wrap',
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flexDirection:'column',
     height:95,
     justifyContent:'center',
-    borderBottomColor:'#c9c9c9',
+    borderBottomColor:Colors.colors.gray,
     borderBottomWidth:2,
   },
   dirs:{

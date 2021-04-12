@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
 import NavButton from "./atoms/navButton.js";
+import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 const color={
-    selected:'#E76F51',
-    notSelected:'#C9C9C9',
+    selected:Colors.colors.mainColor,
+    notSelected:Colors.colors.gray,
 };
 export default function NavItems() {
   return (

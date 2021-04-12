@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Image} from 'react-native';
 import {Dimensions} from 'react-native';
+import Colors from '../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height;
 
@@ -13,7 +13,7 @@ export default function Body() {
             width: wid,
             height: hei
           }}
-          source={require('../../assets/map.png')}
+          source={require('../../assets/img/map.png')}
         />
     </View>
   );

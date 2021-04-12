@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Image} from 'react-native';
 import {Dimensions} from 'react-native';
+import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 export default function Dir(props) {
   return (
@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
   },
   underLine:{
     paddingLeft:10,
-    borderBottomColor:'#7CA5B8',
+    borderBottomColor:Colors.colors.sub2,
     borderBottomWidth:10,
   },
   text: {
     fontSize:23,
     fontWeight:"600",
-    color:'#707070',
+    color:Colors.colors.text,
     position:'relative',
     top:8,
     left:5,
@@ -44,14 +44,14 @@ const styles = StyleSheet.create({
   text2: {
     fontSize:70,
     fontWeight:"700",
-    color:'#707070',
+    color:Colors.colors.text,
     position:'relative',
     top:23,
   },
   text3: {
     fontSize:12,
     fontWeight:"500",
-    color:'#707070',
+    color:Colors.colors.text,
     marginTop:5,
     alignItems:'center',
   },

@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {Component} from 'react';
 import { StyleSheet, Text, View ,Button,Alert,LayoutAnimation,Dimensions} from 'react-native';
 import PlaceInfoTop from "./molecules/placeInfoTop.js";
 import PlaceInfoBody from "./molecules/placeInfoBody.js";
+import Colors from '../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height * (0.5);
 export default function PlaceInfo() {
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width:wid,
     zIndex:1,
-    shadowColor: "#000",
+    shadowColor: Colors.colors.shadow,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     shadowOffset: {
@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     elevation: 1,
   },
   button:{
-    color: "#fff",
+    color: Colors.colors.background,
   },
 });

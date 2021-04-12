@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import {Dimensions} from 'react-native';
 import PlaceName from "./atoms/placeName.js";
 import InfoArrowButton from "./atoms/infoArrowButton.js";
+import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 export default function PlaceInfoTop(props) {
 
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
     width:wid,
     flexWrap:'nowrap',
     flexDirection:'row',
-    backgroundColor: '#0B3954',
-    shadowColor: "#000",
+    backgroundColor: Colors.colors.accent,
+    shadowColor: Colors.colors.shadow,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     shadowOffset: {

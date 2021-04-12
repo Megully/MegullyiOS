@@ -1,14 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
 import * as Progress from 'react-native-progress';
+import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
 export default function ProgressBar() {
   return (
     <View style={styles.container}>
-      <Progress.Bar progress={0.5} width={200} color='#E76F51' unfilledColor='#C9C9C9' borderColor='#fff'/>
+      <Progress.Bar progress={0.5} width={200} color={Colors.colors.mainColor} unfilledColor={Colors.colors.gray}borderColor={Colors.colors.background}/>
     </View>
   );
 }
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize:13,
     fontWeight:"600",
-    color:'#707070',
+    color:Colors.colors.text,
   },
 });

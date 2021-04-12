@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
+import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
 export default function RallyTitle() {
@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize:16,
     fontWeight:"600",
-    color:'#707070',
+    color:Colors.colors.text,
   },
 });

@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
@@ -6,6 +5,7 @@ import HeaderButton from './atoms/headerButton.js';
 import RallyTitle from './atoms/rallyTitle.js';
 import ProgressText from './atoms/progressText.js';
 import ProgressBar from './atoms/progressBar.js';
+import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
 export default function HeaderItems() {

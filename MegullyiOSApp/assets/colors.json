@@ -1,0 +1,26 @@
+{
+    "colors":{
+        "mainColor":"#E76F51",
+        "background":"#FFFFFF",
+        "gray":"#C9C9C9",
+        "accent":"#0B3954",
+        "sub":"#C6F91F",
+        "sub2":"#7CA5B8",
+        "text":"#707070",
+        "mainHighlight":"#FFB4A1",
+        "shadow":"#000",
+        "textOnTab":"#fff"
+    },
+    "colorsDark":{
+        "mainColor":"#E76F51",
+        "background":"#444444",
+        "gray":"#8A8A8A",
+        "accent":"#52788E",
+        "sub":"#C6F91F",
+        "sub2":"#7CA5B8",
+        "text":"#E9E9E9",
+        "mainHighlight":"#FFB4A1",
+        "shadow":"#000",
+        "textOnTab":"#fff"
+    }
+}

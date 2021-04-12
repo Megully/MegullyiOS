@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
 const wid = Dimensions.get('screen').width;
 import NavItems from "./molecules/navItems.js";
+import Colors from '../../assets/colors.json';
 export default function NavBar() {
   return (
     <View style={styles.container}>
@@ -15,10 +15,10 @@ export default function NavBar() {
 const styles = StyleSheet.create({
   container: {
     flex:2,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.colors.background,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: "#000",
+    shadowColor: Colors.colors.shadow,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     shadowOffset: {
