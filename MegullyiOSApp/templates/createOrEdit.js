@@ -7,12 +7,12 @@ import NavBar from './organisms/navBar.js';
 import PlaceInfo from './organisms/placeInfo.js';
 import Colors from '../assets/colors.json';
 
-export default function Home() {
+export default function CreateOrEdit() {
   return (
     <View style={styles.container}>
+      <StatusBar style="auto" />
       <Header />
       <Body />
-      <PlaceInfo  />
     </View>
   );
 }
