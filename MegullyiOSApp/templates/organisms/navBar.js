@@ -7,14 +7,13 @@ import Colors from '../../assets/colors.json';
 export default function NavBar() {
   return (
     <View style={styles.container}>
-      <NavItems />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex:2,
+    flex:1,
     backgroundColor: Colors.colors.background,
     alignItems: 'center',
     justifyContent: 'center',
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 1,
     width:wid,
-    marginTop: -20,
+    marginTop: 0,
     zIndex:2,
 
   },

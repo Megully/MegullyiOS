@@ -5,7 +5,7 @@ import Colors from '../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height;
 
-export default function Body() {
+export default function Map() {
   return (
     <View style={styles.container}>
       <Image

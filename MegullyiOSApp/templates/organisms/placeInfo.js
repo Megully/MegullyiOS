@@ -7,7 +7,7 @@ const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height * (0.5);
 export default function PlaceInfo() {
   const [showInfo, setShowInfo] = React.useState(0);
-  const [infoHeight, setInfoHeight] = React.useState(50);
+  const [infoHeight, setInfoHeight] = React.useState(65);
   const [iconDir, setIconDir] = React.useState("angle-up");
   const handleClick = () => {
     if(showInfo == 0){
@@ -18,7 +18,7 @@ export default function PlaceInfo() {
     }else{
       setShowInfo(() => 0);
       LayoutAnimation.easeInEaseOut();
-      setInfoHeight(() => 50);
+      setInfoHeight(() => 65);
       setIconDir(() => "angle-up");
     }
   };
