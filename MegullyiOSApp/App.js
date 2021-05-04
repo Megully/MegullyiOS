@@ -38,7 +38,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Home" component={Home} options={{tabBarLabel: 'マップ'}}/>
-        <Tab.Screen name="CreateOrEdit" component={CreateOrEdit} options={{tabBarLabel: '作成/編集'}}/>
+        <Tab.Screen name="CreateOrEdit" component={CreateOrEdit} options={{tabBarLabel: '自分のラリー'}}/>
         <Tab.Screen name="StampBook" component={CreateOrEdit} options={{tabBarLabel: 'スタンプ帳'}}/>
         <Tab.Screen name="Settings" component={CreateOrEdit} options={{tabBarLabel: '設定'}}/>
       </Tab.Navigator>
