@@ -7,7 +7,7 @@ import CreateOrEdit from './templates/createOrEdit.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Colors from './assets/colors.json';
-
+const tabName=["マップ","自分のラリー","スタンプ帳","設定"];
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -37,10 +37,10 @@ export default function App() {
           style:styles.navBar,
         }}
       >
-        <Tab.Screen name="Home" component={Home} options={{tabBarLabel: 'マップ'}}/>
-        <Tab.Screen name="CreateOrEdit" component={CreateOrEdit} options={{tabBarLabel: '自分のラリー'}}/>
-        <Tab.Screen name="StampBook" component={CreateOrEdit} options={{tabBarLabel: 'スタンプ帳'}}/>
-        <Tab.Screen name="Settings" component={CreateOrEdit} options={{tabBarLabel: '設定'}}/>
+        <Tab.Screen name="Home" component={Home} options={{tabBarLabel:tabName[0]}} />
+        <Tab.Screen name="CreateOrEdit" component={CreateOrEdit} options={{tabBarLabel: tabName[1]}}/>
+        <Tab.Screen name="StampBook" component={CreateOrEdit} options={{tabBarLabel: tabName[2]}}/>
+        <Tab.Screen name="Settings" component={CreateOrEdit} options={{tabBarLabel:tabName[3]}}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
@@ -71,3 +71,4 @@ const styles = StyleSheet.create({
     paddingBottom:5,
   },
 });
+

@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
-import HeaderItems from './molecules/headerItems.js';
+import HeaderItemsHome from './molecules/headerItemsHome.js';
 import Colors from '../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function Header() {
+export default function HeaderMap() {
   return (
     <View style={styles.container}>
-      <HeaderItems />
+      <HeaderItemsHome tabName="東京観光ツアー"/>
     </View>
   );
 }

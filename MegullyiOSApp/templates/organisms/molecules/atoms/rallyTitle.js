@@ -4,10 +4,10 @@ import {Dimensions} from 'react-native';
 import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function RallyTitle() {
+export default function RallyTitle(props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>東京名所ツアー</Text>
+      <Text style={styles.text}>{props.tabName}</Text>
     </View>
   );
 }

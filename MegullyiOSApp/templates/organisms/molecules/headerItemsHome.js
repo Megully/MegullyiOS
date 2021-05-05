@@ -8,12 +8,12 @@ import ProgressBar from './atoms/progressBar.js';
 import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function HeaderItems() {
+export default function HeaderItemsHome(props) {
   return (
     <View style={styles.container}>
       <HeaderButton icon='bars' />
       <View style={styles.center}>
-        <RallyTitle />
+        <RallyTitle tabName={props.tabName}/>
         <ProgressText />
         <ProgressBar />
       </View>
