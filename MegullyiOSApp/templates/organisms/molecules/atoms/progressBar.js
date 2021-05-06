@@ -5,10 +5,10 @@ import * as Progress from 'react-native-progress';
 import Colors from '../../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function ProgressBar() {
+export default function ProgressBar(props) {
   return (
     <View style={styles.container}>
-      <Progress.Bar progress={0.5} width={200} color={Colors.colors.mainColor} unfilledColor={Colors.colors.gray}borderColor={Colors.colors.background}/>
+      <Progress.Bar progress={parseFloat(props.progress)} width={200} color={Colors.colors.mainColor} unfilledColor={Colors.colors.gray}borderColor={Colors.colors.background}/>
     </View>
   );
 }
