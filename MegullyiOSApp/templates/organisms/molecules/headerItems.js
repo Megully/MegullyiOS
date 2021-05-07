@@ -8,16 +8,10 @@ import ProgressBar from './atoms/progressBar.js';
 import Colors from '../../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function HeaderItemsHome(props) {
+export default function HeaderItems(props) {
   return (
     <View style={styles.container}>
-      <HeaderButton icon='bars' size='30'/>
-      <View style={styles.center}>
-        <RallyTitle tabName={props.tabName}/>
-        <ProgressText />
-        <ProgressBar progress='0.5'/>
-      </View>
-      <HeaderButton icon='book' size='30'/>
+        <RallyTitle tabName={props.tabName} />
     </View>
   );
 }
@@ -25,14 +19,13 @@ export default function HeaderItemsHome(props) {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    width:wid,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
+    flexDirection:'row',
     alignItems: 'center',
+    flexWrap:'nowrap',
+    position:'relative',
+    left:33,
+    zIndex:2,
+    justifyContent:'center',
   },
-  center:{
-    flex:1,
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
+
 });

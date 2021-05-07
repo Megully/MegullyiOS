@@ -26,13 +26,13 @@ export default function Edit() {
     <Item name={item.name} img={item.img} date={item.date}/>
   );
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <FlatList
         data={rallyList}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -40,5 +40,6 @@ const styles = StyleSheet.create({
   container: {
     zIndex:1,
     width:wid,
+    flex:20,
   },
 });

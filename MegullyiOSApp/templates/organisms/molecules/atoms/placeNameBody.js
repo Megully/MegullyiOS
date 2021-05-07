@@ -6,7 +6,7 @@ const wid = Dimensions.get('screen').width;
 export default function PlaceNameBody(props) {
   return (
     <View style={styles.container}>
-        <Text style={styles.text}>東京スカイツリー</Text>
+        <Text style={styles.text}>{props.name}</Text>
     </View>
   );
 }

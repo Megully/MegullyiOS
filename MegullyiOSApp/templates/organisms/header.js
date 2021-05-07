@@ -1,30 +1,32 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Dimensions} from 'react-native';
-import HeaderItemsHome from './molecules/headerItemsHome.js';
+import HeaderItems from './molecules/headerItems.js';
 import Colors from '../../assets/colors.json';
+import HeaderButton from './molecules/atoms/headerButton.js';
 const wid = Dimensions.get('screen').width;
 
-export default function Header() {
+export default function Header(props) {
   return (
     <View style={styles.container}>
-      <HeaderItemsHome tabName="東京観光ツアー" />
+      <HeaderItems tabName={props.name}/>
+      <HeaderButton icon='sort' style={styles.icon} size='21'/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    height:90,
+    height:68,
     backgroundColor: Colors.colors.background,
-    alignItems: 'center',
     width:wid,
     zIndex:2,
-    position:'relative',
     marginBottom: -20,
     shadowColor: Colors.colors.shadow,
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
+    flexWrap:'nowrap',
+    flexDirection:'row',
     shadowOffset: {
       width: 0,
       height: 2,

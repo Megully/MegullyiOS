@@ -11,9 +11,9 @@ export default function PlaceInfoTop(props) {
   return (
     <View style={styles.container}>
       <View style={styles.titles}>
-        <PlaceImg />
+        <PlaceImg img={require('../../../assets/img/skyTree.jpg')}/>
         <View style={styles.aboutPlace}>
-          <PlaceNameBody />
+          <PlaceNameBody name="東京スカイツリー"/>
           <PlaceAddress/>
         </View>
       </View>

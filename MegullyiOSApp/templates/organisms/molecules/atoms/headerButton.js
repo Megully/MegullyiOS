@@ -8,7 +8,7 @@ const wid = Dimensions.get('screen').width;
 export default function HeaderButton(props) {
   return (
     <View style={styles.container}>
-      <Icon name={props.icon} size={30} color={Colors.colors.text}/>
+      <Icon name={props.icon} size={props.size} color={Colors.colors.text} />
     </View>
   );
 }
