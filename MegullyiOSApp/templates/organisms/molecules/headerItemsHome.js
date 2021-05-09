@@ -15,9 +15,9 @@ export default function HeaderItemsHome(props) {
       <View style={styles.center}>
         <RallyTitle tabName={props.tabName}/>
         <ProgressText />
-        <ProgressBar progress='0.5'/>
+        <ProgressBar progress={0.5}/>
       </View>
-      <HeaderButton icon='book' size='30'/>
+      <HeaderButton icon='book' size={30}/>
     </View>
   );
 }

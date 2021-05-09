@@ -10,7 +10,7 @@ export default function Header(props) {
   return (
     <View style={styles.container}>
       <HeaderItems tabName={props.name}/>
-      <HeaderButton icon='sort' style={styles.icon} size='21'/>
+      <HeaderButton icon='sort' style={styles.icon} size={21}/>
     </View>
   );
 }

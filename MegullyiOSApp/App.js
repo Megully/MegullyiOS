@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native';
 import Home from './templates/home.js';
 import CreateOrEdit from './templates/createOrEdit.js';
+import StampBook from './templates/stampBook.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Colors from './assets/colors.json';
@@ -39,7 +40,7 @@ export default function App() {
       >
         <Tab.Screen name="Home" component={Home} options={{tabBarLabel:tabName[0]}} />
         <Tab.Screen name="CreateOrEdit" component={CreateOrEdit} options={{tabBarLabel: tabName[1]}}/>
-        <Tab.Screen name="StampBook" component={CreateOrEdit} options={{tabBarLabel: tabName[2]}}/>
+        <Tab.Screen name="StampBook" component={StampBook} options={{tabBarLabel: tabName[2]}}/>
         <Tab.Screen name="Settings" component={CreateOrEdit} options={{tabBarLabel:tabName[3]}}/>
       </Tab.Navigator>
     </NavigationContainer>
