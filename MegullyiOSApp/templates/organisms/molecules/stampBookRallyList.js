@@ -22,7 +22,7 @@ return (
         <StampBookAuthor author={props.author}/>
         <View style={styles.progress}>
           <Text style={styles.text}>{props.progress}/{props.stampPoint}</Text>
-          <ProgressBar progress={props.progress/props.stampPoint} />
+          <ProgressBar progress={props.progress/props.stampPoint} width={180} />
         </View>
       </View>
     </View>
@@ -44,7 +44,7 @@ titles:{
   height:120,
 },
 aboutPlace:{
-  width:240,
+  width:250,
   flexDirection:'column',
   height:120,
   justifyContent:'center',
@@ -60,11 +60,13 @@ text: {
   color:Colors.colors.text,
   marginTop:-5,
   marginRight:'auto',
-  marginLeft:3,
+  justifyContent:'center',
+  width:45,
+  textAlign:'center',
 },
 progress:{
   flexDirection:'row',
-  width:wid-135,
+  width:wid-140,
   justifyContent:'space-around',
   marginRight:3,
 },

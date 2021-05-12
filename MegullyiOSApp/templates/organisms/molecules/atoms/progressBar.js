@@ -8,7 +8,7 @@ const wid = Dimensions.get('screen').width;
 export default function ProgressBar(props) {
   return (
     <View style={styles.container}>
-      <Progress.Bar progress={props.progress} width={200} color={Colors.colors.mainColor} unfilledColor={Colors.colors.gray}borderColor={Colors.colors.background}/>
+      <Progress.Bar progress={props.progress} width={props.width} color={Colors.colors.mainColor} unfilledColor={Colors.colors.gray}borderColor={Colors.colors.background}/>
     </View>
   );
 }

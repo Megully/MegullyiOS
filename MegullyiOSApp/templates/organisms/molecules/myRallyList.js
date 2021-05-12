@@ -39,7 +39,7 @@ titles:{
   height:100,
 },
 aboutPlace:{
-  width:240,
+  width:250,
   flexDirection:'column',
   height:95,
   justifyContent:'center',
