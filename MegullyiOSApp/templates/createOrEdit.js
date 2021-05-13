@@ -8,7 +8,6 @@ import FloatingButton from './organisms/floatingButton.js';
 import PlaceInfo from './organisms/placeInfo.js';
 import Colors from '../assets/colors.json'
 
-
 export default function CreateOrEdit() {
   return (
     <View style={styles.container}>

@@ -9,6 +9,8 @@ import MyRallyDate from './atoms/myRallyDate.js';
 import PlaceNameBody from './atoms/placeNameBody.js';
 const wid = Dimensions.get('screen').width;
 const hei = Dimensions.get('screen').height;
+import ContentLoader, { Facebook } from 'react-content-loader/native'
+
 
 export default function MyRallyList(props) {
 const date =formatDistance(props.date, new Date(), { addSuffix: true,locale: ja});
