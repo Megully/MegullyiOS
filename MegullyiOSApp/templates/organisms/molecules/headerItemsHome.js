@@ -17,7 +17,7 @@ export default function HeaderItemsHome(props) {
         <ProgressText />
         <ProgressBar progress={0.5} width={200} />
       </View>
-      <HeaderButton icon='book' size={30}/>
+      <HeaderButton icon='book' size={30} onPress={props.onPress}/>
     </View>
   );
 }

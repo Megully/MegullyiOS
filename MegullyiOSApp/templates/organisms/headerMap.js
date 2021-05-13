@@ -5,10 +5,10 @@ import HeaderItemsHome from './molecules/headerItemsHome.js';
 import Colors from '../../assets/colors.json';
 const wid = Dimensions.get('screen').width;
 
-export default function Header() {
+export default function Header(props) {
   return (
     <View style={styles.container}>
-      <HeaderItemsHome tabName="東京観光ツアー" />
+      <HeaderItemsHome tabName="東京観光ツアー" onPress={props.onPress}/>
     </View>
   );
 }
