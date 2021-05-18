@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
   container: {
     zIndex:1,
     width:wid,
-    flex:20,
+    height:hei -130,
+    position:'relative',
+    top:30,
   },
 });

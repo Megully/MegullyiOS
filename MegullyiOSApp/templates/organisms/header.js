@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.colors.background,
     width:wid,
     zIndex:2,
+    position:'absolute',
+    top:0,
     marginBottom: -21,
     shadowColor: Colors.colors.shadow,
     borderBottomLeftRadius: 20,
